@@ -1,15 +1,20 @@
 # Desafio Client-Server-API
 
-## Como rodar
+## Como rodar (SQLite)
 
-1. Rodar o servidor:
+1. Instalar dependências:
+   ```
+   go mod tidy
+   ```
+
+2. Rodar o servidor:
    ```
    go run server.go
    ```
 
-2. Testar a API em outro terminal:
+3. Testar a API em outro terminal:
    ```
    curl http://localhost:8080/cotacao
    ```
 
-O servidor busca a cotação do dólar e salva no SQLite.
+O servidor busca a cotação do dólar na API externa e salva no banco SQLite `cotacoes.db`. Não precisa de Docker / MySQL.
