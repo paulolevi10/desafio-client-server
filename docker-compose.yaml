@@ -1,0 +1,12 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-cotacoes
+    restart: always
+    platform: linux/amd64
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cotacoes
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
