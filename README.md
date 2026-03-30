@@ -17,4 +17,4 @@
    curl http://localhost:8080/cotacao
    ```
 
-O servidor busca a cotação do dólar na API externa e salva no banco SQLite `cotacoes.db`. Não precisa de Docker / MySQL.
+O servidor busca a cotação do dólar na API externa e salva no banco SQLite `cotacoes.db`.
